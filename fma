@@ -1,0 +1,16 @@
+#include <cs50.h>
+#include <stdio.h>
+int f, m, a;
+int x;
+float fnum[10000], anum[10000], mnum[10000];
+int main(void){
+    printf("What is f?");
+    scanf("%f", &fnum[f]);
+    printf("What is m?");
+    scanf("%f", &mnum[m]);
+    printf("What is a?");
+    scanf("%f", &anum[a]);
+    
+    
+    
+}
