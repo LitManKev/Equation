@@ -5,7 +5,7 @@ int f, m, a;
 int x ;
 float fnum[10000], anum[10000], mnum[10000], force, accel, mass;
 int main(void){
-    printf("If the value is unknown, type '00'\n");
+    printf("If the value is unknown, type '0'\n");
     printf("What is f?");
     scanf("%f", &fnum[f]);
     printf("What is m?");
@@ -13,17 +13,17 @@ int main(void){
     printf("What is a?");
     scanf("%f", &anum[a]);
     
-    if (fnum[f]==00){
+    if (fnum[f]==0){
         force = mnum[m]*anum[a];
-        printf("F= %.2f N       ", force);
+        printf("F= %.2f newtons \n", force);
        }
-    if (mnum[m]==00){
+    if (mnum[m]==0){
         mass = fnum[f]/anum[a];
-        printf("M= %.2f kg      ", mass);
+        printf("M= %.2f kilograms \n", mass);
        }
-    if (anum[a]==00){
+    if (anum[a]==0){
         accel = fnum[f]/mnum[m];
-        printf("A= %.2f m/s^2       ", accel);   
+        printf("A= %.2f m/s^2 \n", accel);   
     }
    
 }
