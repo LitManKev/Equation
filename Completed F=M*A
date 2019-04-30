@@ -1,0 +1,29 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+int f, m, a;
+int x ;
+float fnum[10000], anum[10000], mnum[10000], force, accel, mass;
+int main(void){
+    printf("If the value is unknown, type '00'\n");
+    printf("What is f?");
+    scanf("%f", &fnum[f]);
+    printf("What is m?");
+    scanf("%f", &mnum[m]);
+    printf("What is a?");
+    scanf("%f", &anum[a]);
+    
+    if (fnum[f]==00){
+        force = mnum[m]*anum[a];
+        printf("F= %.2f", force);
+       }
+    if (mnum[m]==00){
+        mass = fnum[f]/anum[a];
+        printf("M= %.2f", mass);
+       }
+    if (anum[a]==00){
+        accel = fnum[f]/mnum[m];
+        printf("A= %.2f", accel);   
+    }
+   
+}
