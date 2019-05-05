@@ -1,0 +1,30 @@
+#include <cs50.h>
+#include <math.h>
+#include <stdio.h>
+int a, b , c , d , e , one , two;
+int main(void){
+    printf("This calculator is for 2 numbers only\n");
+    printf("What do you want to do? 1. Add, 2. Subtract, 3. Multiply, 4. Divide? ");
+    scanf("%d", &a);
+    printf("What is the first number? ");
+    scanf("%d", &one);
+    printf("What is the second number? ");
+    scanf("%d", &two);
+   
+    if (a == 1){
+        b = one + two;
+        printf("The answer is %.2d\n", b);
+}
+     if (a == 2){
+        c = one - two;
+        printf("The answer is %.2d\n", c);
+}
+     if (a == 3){
+        d = one * two;
+        printf("The answer is %.2d\n", d);
+}
+     if (a == 4){
+        e = one / two;
+        printf("The answer is %.2d\n", e);
+}
+}
