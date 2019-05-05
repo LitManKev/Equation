@@ -1,0 +1,26 @@
+#include <cs50.h>
+#include <math.h>
+#include <stdio.h>
+int v, i , r , a , b , c;
+int main (void){
+    printf("If the value is unknown, type '0'.\n");
+    printf("What is the value of V?");
+        scanf("%d", &v);
+    printf("What is the value of I?");
+        scanf("%d", &i);
+    printf("What is the value of R?");
+        scanf("%d", &r);
+    
+    if (v == 0){
+        a = i * r;
+        printf("The value of V = %.2d\n", a);
+    }
+    if (i == 0){
+        b = v / r;
+        printf("The value of I = %.2d\n", b);
+    }
+       if (r == 0){
+        c = v / i;
+        printf("The value of R = %.2d\n", c);
+    }
+}
