@@ -1,0 +1,22 @@
+#include <cs50.h>
+#include <math.h>
+#include <stdio.h>
+int a , b , c , d , e;
+int main (void){
+    printf("This is for the year 2019. This does not account for days, only years\n");
+    printf("1. Do you want to find out how old something is or\n2. What year something happened ");
+    scanf("%d", &a);
+    
+    if (a == 1){
+        printf("What year did it happen? ");
+        scanf("%d", &b);
+        c = 2019 - b;
+        printf("That is %.2d old\n", c);
+    }
+    if (a == 2){
+        printf("How long ago did this thing happen? ");
+        scanf("%d", &d);
+        e = 2019 - d;
+        printf("That happened in the year of %.2d\n", e);
+    }
+}
