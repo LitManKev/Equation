@@ -1,0 +1,15 @@
+#include <cs50.h>
+#include <math.h>
+#include <stdio.h>
+
+float cost, taxtaken, finalcost;
+double tax = 0.085;
+int main (void){
+    printf("How much was the item(s)?\n");
+    scanf("%f", &cost);
+    
+    taxtaken = cost * tax;
+    finalcost = cost + taxtaken;
+    
+    printf("The total price is $%.2f\n", finalcost);
+}
