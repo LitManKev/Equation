@@ -1,10 +1,16 @@
 #include <cs50.h>
 #include <math.h>
 #include <stdio.h>
-
-float cost, taxtaken, finalcost;
+int a; 
+float cost, taxtaken, finalcost, withtax, originalprice;
 double tax = 0.085;
+double taxx = 1.085;
 int main (void){
+    
+    printf("1. Do you want to find how much something will cost with tax\n2. The original price without tax?");
+    scanf("%d", &a);
+        
+    if (a == 1){   
     printf("How much was the item(s)?\n");
     scanf("%f", &cost);
     
@@ -12,4 +18,14 @@ int main (void){
     finalcost = cost + taxtaken;
     
     printf("The total price is $%.2f\n", finalcost);
+    }
+    
+    if (a == 2){
+    printf("What was the ending price?");
+    scanf("%f", &withtax);
+        
+    originalprice = withtax / taxx;
+    
+    printf("The original price was %.2f\n", originalprice);
+    }
 }
